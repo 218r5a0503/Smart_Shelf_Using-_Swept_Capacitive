@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT Serial Data Visualizer</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="controls">
+            <h1 class="main-heading">IoT Prototype</h1>
+            <h2 class="sub-heading">NIT Durgapur</h2>
+            <h3 class="sub-heading">Smart Shelf</h3>
+            <div class="button-group">
+                <button id="startBtn" class="btn">▶ Start</button>
+                <button id="stopBtn" class="btn">⏹ Stop</button>
+                <button id="downloadBtn" class="btn">⭳ Export CSV</button>
+            </div>
+            <div class="status">
+                <div class="led"></div>
+                <span id="statusText">Disconnected</span>
+            </div>
+        </div>
+        <div class="visualization">
+            <div id="plotContainer">
+                <p>Click Start to begin visualization</p>
+            </div>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
